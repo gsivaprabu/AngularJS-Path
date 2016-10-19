@@ -1,4 +1,4 @@
-#Angularjs Geeting Started
+#Angularjs Getting Started
 
 Key Points:-
 
