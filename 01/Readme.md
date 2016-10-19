@@ -11,7 +11,7 @@ Key Points:-
     - What is try catch in JS ?
 	- Functions to build modules.
 		- Revealing Module Pattern ?
-	- Functions to avoid global variables.
+	- Functions to avoid global variables
 		- Local variable Vs Global Variable?
 		- The IIFE (Immediately invoked function Expression)?
 		- [https://en.wikipedia.org/wiki/Immediately-invoked_function_expression](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
