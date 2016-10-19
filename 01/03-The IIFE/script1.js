@@ -26,4 +26,3 @@ worker.job2();
 worker.job2();
 worker.job2();
 console.log("");
-console.log("");
