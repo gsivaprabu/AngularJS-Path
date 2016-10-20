@@ -6,4 +6,5 @@
 - Controller build the model.
 - We have use multiple controller in one page
 - use the keyword **ng-controller**
--
+- Every div or any tag we can add controllers
+- That particular tag only that controllers worked.
