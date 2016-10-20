@@ -1,4 +1,12 @@
-#Angularjs Getting Started
+#The IIFE
+
+- Local variables we can access only inside the function.
+- Avoid Global Variables.
+- Anonymous function.
+	An anonymous function is a function that was declared without any named identifier to refer to it. As such, an anonymous function is usually not accessible after its initial creation.
+
+-
+
 
 ###Abstraction
 

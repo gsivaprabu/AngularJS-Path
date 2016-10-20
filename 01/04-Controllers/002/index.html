@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<head>
+    <script src="../../libs/angular-1-2-25.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Sample Controllers</h1>
+    <div ng-controller="mainController">
+        {{message}}
+    </div>
+    <div>
+        sasa {{2+2}}
+    </div>
+    <div ng-controller="mainController">
+        {{person.name}} {{person.age}}
+        <img ng-src={{person.imageLink}} alt="">
+    </div>
+</body>
+
+</html>
