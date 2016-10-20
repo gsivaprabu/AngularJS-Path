@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<head>
+    <script src="../../libs/angular-1-2-25.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+		<div align="center">
+    <h1>Sample Controllers</h1>
+    <div ng-controller="mainController">
+        {{message}}
+    </div>
+    <div>
+        sasa {{2+2}}
+    </div>
+    <div ng-controller="mainController">
+        {{person.name}} {{person.age}}
+        <br>
+        <br>
+        <img ng-src={{person.imageLink}} title={{person.name}} >Using ng-src <br><br>
+        <img src={{person.imageLink}} title={{person.name}}> Using src
+    </div>
+		</div>
+</body>
+
+</html>
