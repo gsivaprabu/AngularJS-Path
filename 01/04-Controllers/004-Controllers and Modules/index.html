@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+
+<head>
+    <script src="../../libs/angular.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div align="center">
+        <h1><u>Using http</u></h1>
+
+        <body ng-controller="MainController">
+            <div style="color: red;">
+                {{error}}
+            </div>
+            <br>
+            <br>
+            <div>
+                Name: {{user.name}}
+            </div>
+            <br>
+            <div>
+                Location: {{user.location}}
+            </div>
+            <br>
+            <div>
+                <img width="50px" height="50px" ng-src="{{user.avatar_url}}" title="{{user.name}}">
+            </div>
+        </body>
+    </div>
+</body>
+
+</html>
