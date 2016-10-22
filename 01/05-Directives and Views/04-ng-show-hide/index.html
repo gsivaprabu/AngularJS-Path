@@ -4,6 +4,7 @@
 <head>
     <script src="../../libs/angular.js"></script>
     <script src="script.js"></script>
+    <!-- <script src="truthy.js"></script> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../libs/bootstrap.min.css">
 
@@ -25,6 +26,7 @@
             </form>
             <br>
             <br>
+            <div ng-show="user">
             <div>
                 Login ID: {{user.login}}
             </div>
@@ -36,7 +38,7 @@
                 Company: {{user.company}}
             </div>
             <br>
-            <div>
+            <div ng-show="user">
                 <img class="img-circle" width="100px " height="100px " ng-src="{{user.avatar_url}} " title="{{user.name}} ">
             </div>
 						<br>
@@ -47,9 +49,10 @@
 								<option value="name">Name</option>
 								<option value="-created_at">Created Date</option>
 						</select>
+						</div>
 						<br>
 						<br>
-						<div class="container container-table">
+						<div ng-hide="!user" class="container container-table">
 						<table class="table table-striped">
 							<thead>
 								<tr>

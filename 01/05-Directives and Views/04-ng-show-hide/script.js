@@ -15,6 +15,7 @@
             console.log('$scope.repositoryDetails', $scope.repositoryDetails);
         }
         var onError = function(reason) {
+        		$scope.user = false;
             $scope.error = "Could not fetch the data";
         }
         $scope.search = function(userName) {
