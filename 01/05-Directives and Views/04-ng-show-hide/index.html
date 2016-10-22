@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+
+<head>
+    <script src="../../libs/angular.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../libs/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div align="center">
+        <h1><u>ng-show and ng-hide in AngularJS</u></h1>
+
+        <body ng-controller="MainController" data-ng-init="search('gsivaprabu')">
+            <div style="color: red;">
+                {{error}}
+            </div>
+            <br>
+            <br>
+            <form name="searchUser" ng-submit="search(userName)">
+                <input type="search" required placeholder="Username to Find" ng-model="userName">
+                <input type="submit" value="search" ">
+            </form>
+            <br>
+            <br>
+            <div>
+                Login ID: {{user.login}}
+            </div>
+            <br>
+            <div>
+                Github URL: {{user.url}}
+            </div>
+            <div>
+                Company: {{user.company}}
+            </div>
+            <br>
+            <div>
+                <img class="img-circle" width="100px " height="100px " ng-src="{{user.avatar_url}} " title="{{user.name}} ">
+            </div>
+						<br>
+						<br>
+						Sort By :
+						<select ng-model="filterByValue">
+								<option value="language">Language</option>
+								<option value="name">Name</option>
+								<option value="-created_at">Created Date</option>
+						</select>
+						<br>
+						<br>
+						<div class="container container-table">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>S#</th>
+									<th>Repository Name</th>
+									<th>language</th>
+									<th>Created Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="repositoryDetailsData in repositoryDetails|orderBy:filterByValue">
+									<td>{{$index}}</td>
+									<td>{{repositoryDetailsData.name}}</td>
+									<td>{{repositoryDetailsData.language}}</td>
+									<td>{{repositoryDetailsData.created_at | date}}</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+        </body>
+    </div>
+</body>
+
+</html>
