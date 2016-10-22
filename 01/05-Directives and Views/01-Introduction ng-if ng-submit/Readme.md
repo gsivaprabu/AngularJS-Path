@@ -12,3 +12,8 @@
 - Controller and Model => Gather the Data
 - View is only => Presenting the Data.
 - Directives allow for indirect model view interaction.
+
+## ng-click and ng-submit
+
+- ng-click = "search(username)"
+- ng-submit
