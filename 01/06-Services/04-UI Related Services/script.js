@@ -1,6 +1,6 @@
 (function() {
     var app = angular.module("githubViewer", []);
-    var MainController = function($scope, $http, $interval) {
+    var MainController = function($scope, $http, $interval, $log) {
         var onUserComplete = function(response) {
             $scope.error = "";
             $scope.user = response.data;
@@ -9,12 +9,12 @@
             }
             $http.get($scope.user.repos_url)
                 .then(repositoryDetails, onError)
-            console.log('$scope.user', $scope.user);
+
         };
         var repositoryDetails = function(response) {
             $scope.repositoryDetails = response.data;
             $scope.error = "";
-            console.log('$scope.repositoryDetails', $scope.repositoryDetails);
+
         }
         var onError = function(reason) {
             $scope.user = false;
@@ -25,7 +25,7 @@
             $scope.countDownTime -= 1;
             if ($scope.countDownTime < 1) {
             		$scope.countDownTime="";
-                console.log("Call Search Function");
+
                 $scope.search($scope.userName);
             }
         };
@@ -35,6 +35,7 @@
         }
 
         $scope.search = function(userName) {
+        		$log.info("Searching for "+userName);
             $http.get("https://api.github.com/users/" + userName)
                 .then(onUserComplete, onError);
         }
