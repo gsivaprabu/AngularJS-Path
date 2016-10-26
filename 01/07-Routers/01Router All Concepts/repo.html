@@ -1,0 +1,21 @@
+<div class="container container-table">
+    <table class="table table-striped">
+    Contributor Details
+        <thead>
+            <tr>
+                <th>S#</th>
+                <th>Login Id</th>
+                <th>Contribution Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in repo.contributors">
+                <td>{{$index}}</td>
+                <td>{{user.login}}</td>
+                <td>{{user.contributions}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#/main" title="Back to Search">Back to Search</a> ||
+    <a href="#/user/{{repo.owner.login}}">Back to {{repo.owner.login}}</a>
+</div>
