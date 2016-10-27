@@ -2,7 +2,11 @@
 
 eventsApp.controller('EventController',
     function EventController($scope) {
-        $scope.sortorder = 'name';
+    		$scope.boolValue = true;
+    		$scope.myStyle ={color:'red'};
+    		$scope.myClass = 'blue';
+        $scope.snippet = '<span style="color:red">h1 there</span>';
+        $scope.myHTML = 'I am an <code>HTML</code>string with ' + '<a href="#">links!</a> and other <em>stuff</em>';
         $scope.event = {
             name: 'Angular Boot Camp',
             date: '1/1/2013',
