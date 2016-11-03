@@ -38,9 +38,11 @@ $scope.snippet ='<<span style="color:red">Hi ngBindHtml</span>';
 
 
 - ng-style
-	- ngClass
-	- ngClassEven
-	- ngClassOdd
+- ngClass
+
+We used in ng-repeat.
+- ngClassEven
+- ngClassOdd
 
 
 #Quiz
@@ -50,3 +52,11 @@ $scope.snippet ='<<span style="color:red">Hi ngBindHtml</span>';
 To avoid a flash of unbound html
 
 2. ng-bind supports multiple binds?
+
+No, ng-bind not supported.
+The ng-bind-template directive is the directive only support multiple bindings
+
+3. The ngClass directive has two companion directives. What are they ?
+
+- ngClassEven
+- ngClassOdd
