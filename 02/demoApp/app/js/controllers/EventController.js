@@ -6,6 +6,7 @@ eventsApp.controller('EventController',
     		$scope.myStyle ={color:'red'};
     		$scope.myClass = 'blue';
         $scope.snippet = '<span style="color:red">h1 there</span>';
+        $scope.buttonDisabled = false;
         $scope.myHTML = 'I am an <code>HTML</code>string with ' + '<a href="#">links!</a> and other <em>stuff</em>';
         $scope.event = {
             name: 'Angular Boot Camp',

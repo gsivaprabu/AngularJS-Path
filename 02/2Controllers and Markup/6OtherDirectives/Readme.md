@@ -1,4 +1,4 @@
-# Other Directives
+# Other Directives - I
 
 - ngApp
 - ngBind
@@ -60,3 +60,43 @@ The ng-bind-template directive is the directive only support multiple bindings
 
 - ngClassEven
 - ngClassOdd
+
+# Other Directives - II
+
+- ngDisabled
+- ngChecked
+- ngMultiple
+- ngReadonly
+- ngSelected
+
+The above directives are  will either add or remove their respective attributes. when you set true or false
+
+
+
+- ng-Form
+
+**HTML spec does not allow forms to be nested.** So we use ng-Form nested in other form.Create smaller section of forms
+
+- ng-submit
+	- Call method on your scope
+
+
+- ng-href => Immediately request the URL
+- ng-src => After Angular is loaded.
+
+- ng-non-bindable
+
+#Quiz
+
+
+1. What does ng-form allow you to do ?
+
+	Nested Forms , nest forms within each other forms.
+
+2. Which directives delays fetching an image until after binding has occurred ?
+
+	ng-src
+
+3. Why do we need the ngDisabled directive ?
+
+	Because of ambiguities in th HTML spec [Control in many browsers]
