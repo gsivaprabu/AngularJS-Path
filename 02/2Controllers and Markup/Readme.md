@@ -15,4 +15,3 @@ Yes [Angular doesn't any specialized object to its model]
 3. Which directive do you use to bind an image's src ?
 
 ngsrc
-
