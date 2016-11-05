@@ -7,10 +7,12 @@ eventsApp.controller('EventController',
     		$scope.myClass = 'blue';
         $scope.snippet = '<span style="color:red">h1 there</span>';
         $scope.buttonDisabled = false;
+        $scope.sortOrder = "name";
         $scope.myHTML = 'I am an <code>HTML</code>string with ' + '<a href="#">links!</a> and other <em>stuff</em>';
         $scope.event = {
             name: 'Angular Boot Camp',
-            date: '1/1/2013',
+            // date: '1/1/2013',
+            date: 1359781015626,
             time: '10:30 am',
             location: {
                 address: 'Google Headquarters',
@@ -26,7 +28,7 @@ eventsApp.controller('EventController',
                 abstract: 'In this session you will learn the ins and outs of directives!',
                 upVoteCount: 0
             }, {
-                name: 'Scopes for fun and profit',
+                name: 'Scopes for fun and profit for Intermediate',
                 creatorName: 'John Doe',
                 duration: 2,
                 level: 'Introductory',

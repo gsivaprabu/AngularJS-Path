@@ -1,17 +1,40 @@
-# Handling Events
-- Taken the session Id.
-- We can access the Object
-- When ever we click the button  ng-click they called the method
-###Quiz
+# Filters
 
-1. Can you use basic JavaScript Objects as your model in Angular ?
+- Modify something for the output.
+- Modify the data before is rendered.
 
-Yes [Angular doesn't any specialized object to its model]
 
-2. What is the markup indicator for binding data to a view?
+#### Three main things
 
-{{}} Double curly braces
+1. Formatting
+	- Uppercase
+	- Lowercase
+	- Number
+	- Dates
+	- Currency
 
-3. Which directive do you use to bind an image's src ?
+2. Sorting Dataset
 
-ngsrc
+3. Filter a record in Dataset.
+
+##### Using Filters
+
+{{expression | filter}}
+
+- Filters are provided by ANgularjs
+- Two filters work with strings
+	- uppercase
+	- lowercase
+
+- Date
+	date => {{event.date | date:'mediumDate'}}
+	date => {{event.date | date:'medium'}}
+
+-JSON
+	- Mainly for debugging purpose
+
+
+#### Below filters are used in ng-repeat
+1. oderBy
+2. limitTo
+3. filter

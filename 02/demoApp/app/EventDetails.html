@@ -18,7 +18,7 @@
             <img ng-src="{{event.imageUrl}}" alt="{{event.name}}">
             <div class="row">
                 <div class="span11">
-                    <h2 ng-style="myStyle">{{event.name}} </h2>
+                    <h2 ng-style="myStyle">{{event.name | uppercase}} </h2>
                 </div>
             </div>
             <div ng-class="myClass" ng-bind-html="snippet">
@@ -31,8 +31,9 @@
             <div ng-hide="boolValue">Hide This</div>
             <div class="row">
                 <div class="span3">
-                    <div><strong>Date:</strong> {{event.date}}</div>
+                    <div><strong>Date:</strong> {{event.date | date:'mediumDate'}}</div>
                     <div><strong>Time:</strong> {{event.time}}</div>
+                    <div><strong>Price:</strong> {{55 | currency}}</div>
                 </div>
                 <div class="span4">
                     <address>
@@ -47,16 +48,34 @@
             <hr>
             <div>
                 {{[1,2,'Sivaprabu',4][2]}}
-                {{Math.min(2,3)}}
+                <hr> {{[1,2,'Sivaprabu',4] | json}} {{Math.min(2,3)}}
+            </div>
+            <hr>
+            <div>
+                {{3.14159289| number:2}}
             </div>
             <hr>
             <div ng-non-bindable>
                 {{2+2}}
             </div>
             <hr/>
-            <h3>Sessions</h3>
+            <h3>Sessions</h3> Order By :
+            <select ng-model="sortOrder" class="inputsmall">
+                <option selected value="name">Name</option>
+                <option value="-upVoteCount">Votes</option>
+            </select>
+            Show:
+            <select ng-model="query.level" class="input-medium">
+                <option selected value="">All</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Introductory">Introductory</option>
+                <option value="Intermediate">Intermediate</option>
+            </select>
+            <br>
+            <br>
+            <br>
             <ul class="thumbnails">
-                <li ng-repeat="session in event.sessions">
+                <li ng-repeat="session in event.sessions | orderBy:sortOrder | limitTo:20 | filter:query">
                     <div class="row session">
                         <div class="span0 well votingWidget">
                             <div class="votingButton" ng-click="upVoteSession(session)">
