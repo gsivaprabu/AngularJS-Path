@@ -1,4 +1,4 @@
-# Angular Event Registration — Demo Application for Angular JS
+# Angular Event Registration — Demo Application for Angular JS Sample App
 
 This project is a sample application demonstrating a more fully developed realistic single page
 angular application.
