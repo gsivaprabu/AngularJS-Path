@@ -1,4 +1,4 @@
-#Saving Data with $resource
+#Saving Data with resource
 
 
 ## QUIZ
