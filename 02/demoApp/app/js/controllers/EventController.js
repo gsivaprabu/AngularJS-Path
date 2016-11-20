@@ -1,20 +1,26 @@
 'use strict';
 
-eventsApp.controller('EventController', 
+eventsApp.controller('EventController',
     function EventController($scope, eventData, $log) {
         $scope.sortorder = 'name';
         eventData.getEvent()
-            .success(function(event) { $scope.event = event; })
-            .error(function(data, status, headers, config) {
-                $log.warn(data, status, headers(), config)
-            });
+            .$promise
+            .then(
+                function(event) {
+                    $scope.event = event;
+                    console.log('event', event);
+                })
+            .catch(
+                function(response) {
+                    console.log('response', response);
+                });
 
         $scope.upVoteSession = function(session) {
-          session.upVoteCount++;
+            session.upVoteCount++;
         };
 
         $scope.downVoteSession = function(session) {
-          session.upVoteCount--;
+            session.upVoteCount--;
         }
     }
 );
