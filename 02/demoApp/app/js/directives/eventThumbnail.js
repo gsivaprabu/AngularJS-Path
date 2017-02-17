@@ -1,10 +1,12 @@
 'use strict';
 
-console.log('here')
-
-eventsApp.directive('eventThumbnail', function($compile) {
+eventsApp.directive('eventThumbnail', function() {
     return {
         restrict: 'E',
-        templateUrl: "../../templates/directives/eventThumbnail.html"
-    };
+        replace: true,
+        templateUrl: '/templates/directives/eventThumbnail.html',
+        scope: {
+            event: "="
+        }
+    }
 });
