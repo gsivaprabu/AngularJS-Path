@@ -1,0 +1,12 @@
+# Performance
+	- Unnecessary
+	- Costly
+	- Never prematurely optimize
+	- Causes of AngularJS Performance
+		- Quite Performance
+		- Too many bindings
+		- Use fewer bindings
+		- Change the User Experience
+		- Scroll not in main page => Navigate to more details page
+		- Use different render engine
+		- **React Render Engine** is too fast.
