@@ -7,3 +7,5 @@
 	- **npm install karma karma-chrome-launcher karma-jasmine**	then install karma-cli globally **npm install karma-cli -g**
 	- Then configure step by step using **karma init**
 	- npm install karma-cli -g
+
+- **karma start /test/karma.conf.js**
