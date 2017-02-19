@@ -1,0 +1,3 @@
+Angular Directives Fundamentals
+
+Directives are one of the most complex pieces of Angular, but learning to do them properly doesn't have to be a chore. This course will take you from knowing nothing about directives, to knowing everything. Through this course, you will gain a comprehensive understanding of all the pieces of directives and how to build them. More importantly you will learn how to make small, focused, and maintainable directives.
