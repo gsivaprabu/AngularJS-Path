@@ -1,0 +1,15 @@
+<b>Name:</b> {{ user.name }}
+<br />
+<br />
+<div ng-show='!!user.address'> <b>Address:</b>
+    <br /> {{user.address.street}}
+    <br /> {{user.address.city}}
+    <br /> {{user.address.planet}}
+</div>
+<br />
+<div><b>Friends:</b>
+    <br>
+    <div ng-repeat='friend in user.friends'>
+        {{$index }} - {{friend}}
+    </div>
+</div>
