@@ -25,5 +25,5 @@ app.controller('mainCtrl', function($scope) {
                 'Chewbacca'
             ]
         }
-    console.log('$scope', $scope);
+    console.log('Parent Scope', $scope);
 });

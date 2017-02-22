@@ -1,12 +1,4 @@
-#Events Scope and Controllers
-
-
-# Inherited Scopes
-
-- Call the scope from the root Object
-- Using
-	```javascript
-    app.directive('address', function() {
+app.directive('address', function() {
     return {
         restrict: 'E',
         scope: true,
@@ -14,7 +6,7 @@
         templateUrl: 'app/templates/directives/address.html',
         controller: function($scope) {
             $scope.collapsed = false;
-			$scope.user = {}
+/*            $scope.user = {}
             console.log('$scope in address', $scope);*/
             $scope.collapsedAddress = function() {
                 $scope.collapsed = true;
@@ -22,7 +14,7 @@
             $scope.expandAddress = function() {
                 $scope.collapsed = false;
             }
-        	}
-    	}
-	})
-    ```
+        }
+    }
+
+})
