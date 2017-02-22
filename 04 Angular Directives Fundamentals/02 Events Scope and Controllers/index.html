@@ -10,12 +10,17 @@
     <script src="app/js/app.js"></script>
     <script src="app/js/controllers/main-controller.js"></script>
     <script src="app/js/directives/userinfocardard-directive.js"></script>
+    <script src="app/js/directives/my-directive.js"></script>
+    <script src="app/js/directives/a-directive.js"></script>
+    <script src="app/js/directives/b-directive.js"></script>
 </head>
 
 <body ng-controller="mainCtrl" class="container" style="padding-top: 30px">
+<div a-directive b-directive></div>
     <data-user:info-card user="user1"></data-user:info-card>
     <data-user:info-card user="user2"></data-user:info-card>
     <!-- <user-info-card></user-info-card> -->
+    <!-- <data-user:info-card user="user1" my-directive></data-user:info-card> -->
 </body>
 
 </html>
