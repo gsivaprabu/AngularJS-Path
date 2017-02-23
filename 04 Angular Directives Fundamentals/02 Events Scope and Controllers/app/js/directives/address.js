@@ -2,13 +2,10 @@ app.directive('address', function() {
     return {
         restrict: 'E',
         scope: true,
-        // scope: {},
         templateUrl: 'app/templates/directives/address.html',
         controller: function($scope) {
             $scope.collapsed = false;
-/*            $scope.user = {}
-            console.log('$scope in address', $scope);*/
-            $scope.collapsedAddress = function() {
+            $scope.collapseAddress = function() {
                 $scope.collapsed = true;
             }
             $scope.expandAddress = function() {
@@ -16,5 +13,4 @@ app.directive('address', function() {
             }
         }
     }
-
 })

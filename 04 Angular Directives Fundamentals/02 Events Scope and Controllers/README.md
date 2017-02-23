@@ -1,4 +1,1 @@
 #Events Scope and Controllers
-
-
-
