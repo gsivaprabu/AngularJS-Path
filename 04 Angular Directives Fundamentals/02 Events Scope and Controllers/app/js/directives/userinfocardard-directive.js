@@ -14,6 +14,21 @@ app.directive('userInfoCard', function() {
             $scope.collapse = function() {
                 $scope.collapsed = !$scope.collapsed;
             }
+
+            $scope.removing = false;
+            $scope.startRemove = function() {
+                $scope.removing = true;
+            }
+            $scope.cancelRemove = function() {
+                $scope.removing = flase;
+            }
+
+            $scope.removeFriend = function(friend) {
+                var idx = $scope.user.friends.indexOf(friend);
+                if (idx > -1) {
+                    $scope.user.friends.splice(idx, 1);
+                }
+            }
         }
     }
 });
