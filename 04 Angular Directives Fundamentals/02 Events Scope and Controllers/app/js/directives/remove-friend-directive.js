@@ -14,7 +14,7 @@ app.directive('removeFriend', function() {
                 $scope.removing = false;
             }
             $scope.confirmRemove = function() {
-                $scope.notifyParent();
+                $scope.notifyParent({friend:'Han'});
             }
         }
     }
