@@ -15,14 +15,6 @@ app.directive('userInfoCard', function() {
                 $scope.collapsed = !$scope.collapsed;
             }
 
-            $scope.removing = false;
-            $scope.startRemove = function() {
-                $scope.removing = true;
-            }
-            $scope.cancelRemove = function() {
-                $scope.removing = flase;
-            }
-
             $scope.removeFriend = function(friend) {
                 var idx = $scope.user.friends.indexOf(friend);
                 if (idx > -1) {
