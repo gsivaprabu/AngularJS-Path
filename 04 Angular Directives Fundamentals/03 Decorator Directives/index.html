@@ -10,12 +10,16 @@
     <script src="app/js/app.js"></script>
     <script src="app/js/controllers/main-controller.js"></script>
     <script src="app/js/directives/spacebar-support-directive.js"></script>
+    <script src="app/js/directives/event-pause-directive.js"></script>
 </head>
 
 <body ng-controller="mainCtrl" class="container" style="padding-top: 30px">
-    <video id="vid" spacebar-support controls preload="none" poster="app/images/poster.png">
+    <video id="vid" spacebar-support event-pause="handlePause(evt)" controls preload="none" poster="app/images/poster.png">
         <source src="app/videos/trailer.mp4" type="video/mp4"></source>
     </video>
+    <div ng-repeat="message in messages">
+        {{message.text}}
+    </div>
 </body>
 
 </html>
