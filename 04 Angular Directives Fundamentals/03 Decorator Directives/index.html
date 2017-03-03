@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="app" ng-controller="mainCtrl" my-click="clickHandler(data)">
 
 <head>
     <link rel="stylesheet" type="text/css" href="../libs/bootstrap/bootstrap.min.3.1.1.css">
@@ -9,17 +9,12 @@
     <link rel="stylesheet" href="app/css/style.css" />
     <script src="app/js/app.js"></script>
     <script src="app/js/controllers/main-controller.js"></script>
-    <script src="app/js/directives/spacebar-support-directive.js"></script>
-    <script src="app/js/directives/event-pause-directive.js"></script>
+    <script src="app/js/directives/my-click-directive.js"></script>
 </head>
 
-<body ng-controller="mainCtrl" class="container" style="padding-top: 30px">
-    <video id="vid" spacebar-support event-pause="handlePause(evt)" controls preload="none" poster="app/images/poster.png">
-        <source src="app/videos/trailer.mp4" type="video/mp4"></source>
-    </video>
-    <div ng-repeat="message in messages">
-        {{message.text}}
-    </div>
+<body>
+    <h1>Hello Siva</h1>
+    <h2>{{data.message}}</h2>
 </body>
 
 </html>

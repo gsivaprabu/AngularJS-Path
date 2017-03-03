@@ -1,8 +1,6 @@
 app.controller('mainCtrl', function($scope) {
-    $scope.messages = [];
-    $scope.handlePause = function(e) {
-        console.log(e);
-        $scope.messages.push({ text: 'paused!' });
-        console.log('paused!');
+    $scope.data = { message: "I am not been Clicked" };
+    $scope.clickHandler = function(p) {
+        p.message = "I have been clicked";
     }
 });
