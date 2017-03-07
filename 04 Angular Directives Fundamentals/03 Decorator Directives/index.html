@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app" ng-controller="mainCtrl" my-click="clickHandler(data)">
+<html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="../libs/bootstrap/bootstrap.min.3.1.1.css">
@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="app/css/style.css" />
     <script src="app/js/app.js"></script>
     <script src="app/js/controllers/main-controller.js"></script>
-    <script src="app/js/directives/my-click-directive.js"></script>
+    <script src="app/js/directives/user-tile.js"></script>
+    <script src="app/js/directives/user-click-status.js"></script>
 </head>
 
-<body>
-    <h1>Hello Siva</h1>
-    <h2>{{data.message}}</h2>
+<body ng-app="app" ng-controller="mainController">
+    <user-tile user="user1">
+    </user-tile>
 </body>
 
 </html>
