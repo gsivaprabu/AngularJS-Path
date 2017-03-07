@@ -9,13 +9,25 @@
     <link rel="stylesheet" href="app/css/style.css" />
     <script src="app/js/app.js"></script>
     <script src="app/js/controllers/main-controller.js"></script>
-    <script src="app/js/directives/user-tile.js"></script>
-    <script src="app/js/directives/user-click-status.js"></script>
+    <script src="app/js/directives/font-scale.js"></script>
 </head>
 
 <body ng-app="app" ng-controller="mainController">
-    <user-tile user="user1">
-    </user-tile>
+    <div>
+        Hi Pranav Sivaprabu {{size}}
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div font-scale="size">
+        Hi Pranav Sivaprabu
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <input ng-model="size">
 </body>
 
 </html>
