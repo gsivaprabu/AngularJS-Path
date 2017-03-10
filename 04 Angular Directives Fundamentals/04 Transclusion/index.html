@@ -9,18 +9,21 @@
     <link rel="stylesheet" href="app/css/style.css" />
     <script src="app/js/app.js"></script>
     <script src="app/js/controllers/main-controller.js"></script>
+    <script src="app/js/controllers/inner-controller.js"></script>
     <script src="app/js/directives/display-box.js"></script>
 </head>
 
-  <body ng-controller="mainController">
-    <h1>Transclude Basic Concept</h1>
+  <body ng-controller="mainCtrl">
+    <h1>Hello Plunker!</h1>
     <display-box>
+      <div ng-controller="innerCtrl">
       <div>This is content inside</div>
       <ul>
         <li>Item 1</li>
         <li>Item 2</li>
       </ul>
       <div>{{message}}</div>
+      </div>
     </display-box>
   </body>
 
