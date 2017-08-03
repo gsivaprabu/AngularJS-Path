@@ -3,4 +3,4 @@ import { Component } from "@angular/core";
   templateUrl: "./adminMenu.component.html",
   styleUrls: ["./adminMenu.component.css"]
 })
-export class adminMenuComponent {}
+export class AdminMenuComponent {}
