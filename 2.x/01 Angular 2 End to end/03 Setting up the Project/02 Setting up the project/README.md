@@ -21,16 +21,26 @@ Webpack and Foundation based project, manual install
 	- dependencies for require to make angular work
 	- dev dependencies only for developement.
 	- typescript for typscript compiler
+
 - tsconfig.json configuration of typescript compiler
 	- emitDecoratorMetadata and experimentalDecorators is important
+
 - webpack.config.js for web pack configuration
+
 - helper.js generate correct path for webpack.
+
 - karma-test-shim.js for karma libraries included
+
 - karma.conf.js for actual configuration of karma
+
 - webpack.common.js for all webpack configurations.
+
 - webpack.dev.js for developement purpose only.
+
 - webpack.prod.js for production purpose only.
+
 - webpack.test.js for testing purpose only.
+
 - sass folder for styles
 	- style.scss
 	- _settings.scss
