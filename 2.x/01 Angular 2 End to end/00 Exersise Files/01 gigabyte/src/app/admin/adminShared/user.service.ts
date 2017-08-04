@@ -9,7 +9,7 @@ import {
 @Injectable()
 export class UserService implements CanActivate {
   userLoggedIn: boolean = false;
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   canActivate(
     route: ActivatedRouteSnapshot,
