@@ -6,11 +6,10 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
  })
- 
-export class LoginComponent { 
+
+export class LoginComponent {
   email: string;
   password1: string;
-  
   constructor(private userSVC: UserService, private router: Router){}
 
   login(){
