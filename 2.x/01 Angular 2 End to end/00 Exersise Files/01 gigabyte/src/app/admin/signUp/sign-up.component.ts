@@ -29,5 +29,5 @@ export class SignUpComponent {
   cancel(){
     this.router.navigate(['/admin/login']);
   }
-
+  
  }
