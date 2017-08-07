@@ -1,11 +1,12 @@
-import { Component, OnInit } from "@angular/core";
-import { UserService } from "../adminShared/user.service";
-import { Router } from "@angular/router";
+# 08 Angular 2 End to end - Setting up Authentication - Configuring the Admin-menu Component
 
-@Component({
-  templateUrl: "./admin-menu.component.html",
-  styleUrls: ["./admin-menu.component.css"]
-})
+- Import the angular core and services
+- Import roter also
+- **OnInit()** for Angular2
+
+- Using **ngOnInit()** we can get the logged in user.
+
+```javascript
 export class AdminMenuComponent implements OnInit {
   theUser: string;
 
@@ -21,3 +22,4 @@ export class AdminMenuComponent implements OnInit {
     this.router.navigate([""]);
   }
 }
+```
