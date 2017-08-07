@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+# 07 Angular 2 End to end - Setting up Authentication - Configuring the Login Component
+
+- Login component same like as  signup component.
+- Import user service and router
+
+```javascript
 import {UserService} from '../adminShared/user.service';
 import { Router } from '@angular/router';
+```
+- based on function call the components and routers
 
-@Component({
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
- })
-
+```javascript
 export class LoginComponent {
   email: string;
   password1: string;
@@ -26,3 +29,4 @@ export class LoginComponent {
   }
 
 }
+```
