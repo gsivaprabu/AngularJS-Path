@@ -15,3 +15,9 @@
  		- Firebase will validate email pattern.
  		- Firebase will enforce password requirements.
 
+- [https://firebase.google.com/](https://firebase.google.com/)
+- Create the project
+- Then enable sign-in option
+- Copy the web application script and paste your configuration class
+- install firebase using npm **npm install firebase --save**
+-
