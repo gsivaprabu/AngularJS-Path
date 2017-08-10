@@ -21,6 +21,9 @@ export class BlogAdminService {
           img: url,
           id: newPost.key
         });
+      })
+      .catch(error => {
+        alert("failed upload: ${error}");
       });
   }
 }
