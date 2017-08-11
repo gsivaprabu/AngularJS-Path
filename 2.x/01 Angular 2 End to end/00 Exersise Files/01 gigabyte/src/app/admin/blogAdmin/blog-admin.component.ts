@@ -6,8 +6,8 @@ import { BlogAdminService } from "../adminShared/blog-admin.services";
 import { Blog } from "../adminShared/blog";
 
 @Component({
-  templateUrl: "./blog.admin.component.html",
-  styleUrls: ["./blog.admin.component.css"]
+  templateUrl: "./blog-admin.component.html",
+  styleUrls: ["./blog-admin.component.css"]
 })
 export class BlogAdminComponent implements OnInit {
   theUser: string;

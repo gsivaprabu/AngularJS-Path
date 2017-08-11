@@ -11,7 +11,7 @@ import { SignUpComponent } from "./signUp/sign-up.component";
 import { UserService } from "./adminShared/user.service";
 import { BlogAdminService } from "./adminShared/blog-admin.services";
 
-import { BlogAdminComponent } from "./blogAdmin/blog.admin.component";
+import { BlogAdminComponent } from "./blogAdmin/blog-admin.component";
 
 const AdminRoutes: Routes = [
   {
