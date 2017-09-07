@@ -1,1 +1,32 @@
 # Angular Getting Started - 02 Introduction - 05 Course Outline
+
+- First Things First
+	- Setup
+	- Language
+	- Editor
+- Introduction to Components
+	- Template
+	- Minimal Component
+- Templates, Interpolation, and Directives
+	- Views
+- Data Binding & Pipes
+	- Format data's
+- More on Components
+	- Styles
+	- Life Cycle
+- Building Nested Components
+	- Nested components
+	- Containers
+	- Cross Communication
+- Services and Dependency Injection
+	- Dependency Injection
+- Retrieving Data Using HTTP
+	- Communicate backend
+- Navigation and Routing
+	- URL Routing
+	- Multiple Views
+- Angular Modules
+	- Root Angular Module
+	- Multiple angular Module
+- Building, Testing and Deploying with the CLI
+	- Test and Deploy
