@@ -4,6 +4,3 @@
 - Selecting an Editor
 - Setting up an Angular Application
 - About Modules
-
-
-###
