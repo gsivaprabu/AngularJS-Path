@@ -1,4 +1,24 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "cSpell.enabledLanguageIds": [
+        "c",
+        "cpp",
+        "csharp",
+        "go",
+        "handlebars",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "latex",
+        "markdown",
+        "php",
+        "plaintext",
+        "python",
+        "restructuredtext",
+        "text",
+        "typescriptreact",
+        "yml"
+    ],
+    "cSpell.enabled": false
 }
