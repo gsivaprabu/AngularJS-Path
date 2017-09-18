@@ -22,5 +22,3 @@ Development time only!
 ***ES5 & ES2015*** do not support interface but typescript supports interface
 
 Interfaces are **development time** only
-
-
