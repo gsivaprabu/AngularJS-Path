@@ -1,11 +1,11 @@
 # Angular Getting Started - 07 More on Components - 04 Using Lifecycle Hooks
 
 Component Lifecycle
-- Create
-- Render
+- Create the component
+- Render it
 - Create and render children
-- Process changes
-- Destroy
+- Process changes (When its data bound properties change)
+- Destroy (Then destroy it  before removing its template from the DOM)
 
 ### Component Lifecycle Hooks
 - OnInit: Perform component initialization,retrieve data
