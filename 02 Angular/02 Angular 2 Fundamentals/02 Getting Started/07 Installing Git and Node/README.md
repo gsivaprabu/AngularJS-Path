@@ -1,4 +1,5 @@
-# Getting Started - Installing Git and Node
+# Getting Started -  Installing Git and Node
 
-- Install Git
-- Install node JS
+
+- Install git and Node(npm)
+- nvm for windows
