@@ -1,1 +1,1 @@
-# Angular-2-Fundamentals
+# Angular Fundamentals
